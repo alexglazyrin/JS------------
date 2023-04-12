@@ -1,15 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
+
 <body>
 
-    <div class="content"></div>
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
+
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title" data-number="100">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <p class="card-text" data-number="50">
+                Some quick example text to build on the card title and make up the bulk of the card's
+                content.
+            </p>
+            <a href="#" id="super_link" class="card-link">Card link</a>
+            <a href="#" class="card-link" data-number="50">Another link</a>
+        </div>
+    </div>
+
+    <!-- <div class="content"></div> -->
 
     <!-- <a class="link" href="#">link text html</a>
     <img class="photo" src="/img/photo1.jpg" alt="photo"> -->
@@ -39,33 +58,34 @@
 
 
     <!-- <script src="script.js"></script> -->
+    <script src="hw1.js"></script>
 
     <script>
 
-        const divEl = document.querySelector('.content');
+        // const divEl = document.querySelector('.content');
 
-        const newButtonSend = document.createElement('button');
-        divEl.appendChild(newButtonSend);
-        newButtonSend.textContent = 'Отправить';
-        newButtonSend.onclick = function(){
-            newButtonSend.textContent = 'Текст отправлен';
-        }
+        // const newButtonSend = document.createElement('button');
+        // divEl.appendChild(newButtonSend);
+        // newButtonSend.textContent = 'Отправить';
+        // newButtonSend.onclick = function(){
+        //     newButtonSend.textContent = 'Текст отправлен';
+        // }
 
-        const newButtonRandText = document.createElement('button');
-        divEl.appendChild(newButtonRandText);
-        newButtonRandText.textContent = 'Создать текст';
-        const someText = document.createElement('p');
-        someText.textContent = 'Произвольный текст';
-        let count = 2;
-        newButtonRandText.onclick = function(){
-            if (count % 2 === 0) {
-                divEl.appendChild(someText);
-                count++;
-            } else {
-                someText.remove();
-                count--;
-            }
-        }
+        // const newButtonRandText = document.createElement('button');
+        // divEl.appendChild(newButtonRandText);
+        // newButtonRandText.textContent = 'Создать текст';
+        // const someText = document.createElement('p');
+        // someText.textContent = 'Произвольный текст';
+        // let count = 2;
+        // newButtonRandText.onclick = function(){
+        //     if (count % 2 === 0) {
+        //         divEl.appendChild(someText);
+        //         count++;
+        //     } else {
+        //         someText.remove();
+        //         count--;
+        //     }
+        // }
 
 
 
@@ -139,7 +159,7 @@
         // //imgEl.src = 'newphoto.jpg';
 
         // imgEl.onclick = function () {
-        //     imgEl.src = 'newphoto.jpg';            
+        //     imgEl.src = 'newphoto.jpg';
         // }
 
 
@@ -164,7 +184,7 @@
         // console.log(listElsQS);
 
         // const heading2 = document.getElementById('heading');
-        // console.log(heading2); //не рекомендуется 
+        // console.log(heading2); //не рекомендуется
         // const heading3 = document.querySelector('#heading');
         // console.log(heading3);
 
@@ -179,6 +199,7 @@
         // console.log(heading);
         // console.log(text);
     </script>
-    
+
 </body>
+
 </html>
