@@ -12,7 +12,6 @@ CardLinkEl.forEach(element => {
     console.log(element);
 });
 
-
 // 3. Найти все элементы на странице с классом "card-link", которые лежат в элементе с классом "card-body" и вывести полученную коллекцию в консоль.
 
 const LinkByBodyEl = document.querySelectorAll('.card-body .card-link');
@@ -33,3 +32,16 @@ console.log(entTitle.textContent);
 
 const cardTitleAnces = document.querySelector('.card-title');
 console.log(cardTitleAnces.parentNode); 
+
+// 7. Создайте тегp`, запишите внутри него текст "Привет" и добавьте созданный тег в начало элемента, который имеет класс "card".
+
+const cardEl = document.querySelector('.card');
+
+const newParEl = document.createElement('p');
+newParEl.textContent = 'Привет';
+cardEl.prepend(newParEl);
+
+// 8. Удалите тег h6 на странице.
+
+const deleteTegH6 = document.querySelector('h6');
+deleteTegH6.remove();
