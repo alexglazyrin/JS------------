@@ -1,21 +1,21 @@
 // 1. Найти по id, используя getElementById, элемент с id равным "super_link" и вывести этот элемент в консоль.
 
-const SuperLinkEl = document.getElementById('super_link');
-console.log(SuperLinkEl);
+const superLinkEl = document.getElementById('super_link');
+console.log(superLinkEl);
 
 // 2. Внутри всех элементов на странице, которые имеют класс "card-link", поменяйте текст внутри элемента на "ссылка".
 
-const CardLinkEl = document.querySelectorAll('.card-link');
+const cardLinkEl = document.querySelectorAll('.card-link');
 
-CardLinkEl.forEach(element => {
+cardLinkEl.forEach(element => {
     element.textContent = 'ссылка';
     console.log(element);
 });
 
 // 3. Найти все элементы на странице с классом "card-link", которые лежат в элементе с классом "card-body" и вывести полученную коллекцию в консоль.
 
-const LinkByBodyEl = document.querySelectorAll('.card-body .card-link');
-console.log(LinkByBodyEl);
+const linkByBodyEl = document.querySelectorAll('.card-body .card-link');
+console.log(linkByBodyEl);
 
 // 4. Найти первый попавшийся элемент на странице у которого есть атрибут data-number со значением 50 и вывести его в консоль.
 //Спорное решение (подумать).
