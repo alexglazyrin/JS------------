@@ -1,13 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
     
+</head>
+
+<body>
+
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
+
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title" data-number="100">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <p class="card-text" data-number="50">
+                Some quick example text to build on the card title and make up the bulk of the card's
+                content.
+            </p>
+            <a href="#" id="super_link" class="card-link">Card link</a>
+            <a href="#" class="card-link" data-number="50">Another link</a>
+        </div>
+    </div>
+
+    <!-- <div class="content"></div> -->
+
+    <!-- <a class="link" href="#">link text html</a>
+    <img class="photo" src="/img/photo1.jpg" alt="photo"> -->
+
+    <!-- <div id="block">
+        <p>1</p>
+        <p>2</p>
+    </div>
+    <p class="www">text 1</p>
+    <p class="www">text 2</p> -->
+    <!-- <h1 class="title">Lorem, ipsum dolor.</h1>
+    <h2 id="heading">Lorem ipsum dolor sit amet.</h2>
+    <ul class="ul">
+        <list class="list">text 1</list>
+        <list class="list">text 2</list>
+        <list class="list">text 3</list>
+    </ul>
+    <p class="text">Lorem, ipsum dolor. 1</p>
+    <p class="text">Lorem, ipsum dolor. 2</p>
+    <p class="text">Lorem, ipsum dolor. 3</p>
+    <p class="text">Lorem, ipsum dolor. 4</p>
+    <button class="btn">купить</button>
+    <section></section>
+    <div class="content">
+    </div>
+    <img class="img" src="photo.jpg" alt="photo"> -->
+
+
+    <!-- <script src="script.js"></script> -->
+    <script src="hw1.js"></script>
+
+    <script>
+
+        // const divEl = document.querySelector('.content');
+
+        // const newButtonSend = document.createElement('button');
+        // divEl.appendChild(newButtonSend);
+        // newButtonSend.textContent = 'Отправить';
+        // newButtonSend.onclick = function(){
+        //     newButtonSend.textContent = 'Текст отправлен';
+        // }
+
+        // const newButtonRandText = document.createElement('button');
+        // divEl.appendChild(newButtonRandText);
+        // newButtonRandText.textContent = 'Создать текст';
+        // const someText = document.createElement('p');
+        // someText.textContent = 'Произвольный текст';
+        // let count = 2;
+        // newButtonRandText.onclick = function(){
+        //     if (count % 2 === 0) {
+        //         divEl.appendChild(someText);
+        //         count++;
+        //     } else {
+        //         someText.remove();
+        //         count--;
+        //     }
+        // }
+
+
+
+
+        // const divEl = document.querySelector('.content');
+        // const newButton = document.createElement('button');
+        // newButton.textContent = "Count";
+        // divEl.appendChild(newButton);
+        // let count = 0;
+
+        // newButton.onclick = sequence();
+
+        // // newButton.onclick = function(){
+        // //     count += 1;
+        // //     console.log(count);
+        // // };
+
+        // function sequence(){
+        //     let callnumber = 0;
+        //     return function(){
+        //         return ++callnumber;
+        //         console.log(callnumber);
+        //     }
+        // }
+
+        // let counter = sequence();
+
+
+        // const divEl = document.querySelector('.content');
+        // const newPEl = document.createElement('p');
+        // newPEl.textContent = 'Новый текстовый документ';
+
+        // divEl.appendChild(newPEl);
+
+        // newPEl.remove();
+
+        // const parNod = document.querySelector('.content');
+        // parNod.parentNode.removeChild();
+
+        // const newPTextEl = document.createTextNode('Содержимое тестовой ноды');
+        // newPEl.appendChild(newPTextEl);
+
+
+        // const linkTextEl = document.querySelector('.link');
+        // linkTextEl.textContent = 'link text js';
+        // linkTextEl.href = 'https://developer.mozilla.org/ru/';
+        // linkTextEl.setAttribute('target', 'blank');
+
+        // const photoEl = document.querySelector('.photo');
+        // photoEl.src = 'img/photo2.jpg';
+        // photoEl.style.maxWidth = '400px';
+
+        // const pById = document.querySelector('#block p');
+        // console.log(pById);
+
+        // const pById2 = document.getElementById('#block p');
+        // console.log(pById2);
+
+        // const pById1 = document.querySelector('p');
+        // console.log(pById1);
+
+        // const pWww = document.querySelector('.www');
+        // console.log(pWww);
+
+        // const titleEl = document.querySelector('.title');
+        // titleEl.textContent = 'Heading from JS';
+        // const heading2 = document.querySelector('#heading');
+        // heading2.remove();
+
+        // const imgEl = document.querySelector('.img');
+        // //imgEl.src = 'newphoto.jpg';
+
+        // imgEl.onclick = function () {
+        //     imgEl.src = 'newphoto.jpg';
+        // }
+
+
+
+        // const buttonEl = document.querySelector('.btn');
+        // const contentEl = document.querySelector('.content');
+
+        // buttonEl.onclick = function(){
+        //     buttonEl.textContent = 'Товар в корзине';
+        //     contentEl.append(textEl);
+        // }
+
+
+
+        // const textEl = document.createElement('p');
+        // textEl.textContent = 'lorem5';
+
+
+        // const listEls = document.getElementsByClassName('list');
+        // console.log(listEls);
+        // const listElsQS = document.querySelectorAll('.list');
+        // console.log(listElsQS);
+
+        // const heading2 = document.getElementById('heading');
+        // console.log(heading2); //не рекомендуется
+        // const heading3 = document.querySelector('#heading');
+        // console.log(heading3);
+
+        // const heading = document.querySelector('.title');
+        // const text = document.querySelectorAll('.text');
+        // text.forEach(element => {
+        //     console.log(element);
+        // });
+        // for (let i = 0; i < text.length; i++) {
+        //     console.log(text[i]);
+        // }
+        // console.log(heading);
+        // console.log(text);
+    </script>
+
 </body>
+
 </html>
